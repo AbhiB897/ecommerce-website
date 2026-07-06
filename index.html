@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - E-Commerce Website</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <h2>ShopEase</h2>
+        </div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+            >
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+                <span id="cartCount">0</span>
+            </a>
+
+            <a href="wishlist.html">
+                <i class="fa-solid fa-heart"></i>
+                Wishlist
+            </a>
+
+            <button id="darkModeBtn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <a href="login.html">
+                Login
+            </a>
+
+        </div>
+
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Biggest Sale of the Year</h1>
+
+            <p>
+                Up to 70% Off on Electronics,
+                Fashion and Accessories
+            </p>
+
+            <button class="shop-btn">
+                Shop Now
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Categories -->
+
+    <section class="categories">
+
+        <h2>Shop By Category</h2>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <i class="fa-solid fa-laptop"></i>
+                <h3>Electronics</h3>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-shirt"></i>
+                <h3>Fashion</h3>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-gem"></i>
+                <h3>Jewelry</h3>
+            </div>
+
+            <div class="category-card">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <h3>Mobiles</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Filter Section -->
+
+    <section class="filter-section">
+
+        <select id="categoryFilter">
+
+            <option value="all">
+                All Categories
+            </option>
+
+            <option value="electronics">
+                Electronics
+            </option>
+
+            <option value="jewelery">
+                Jewelry
+            </option>
+
+            <option value="men's clothing">
+                Men's Clothing
+            </option>
+
+            <option value="women's clothing">
+                Women's Clothing
+            </option>
+
+        </select>
+
+        <select id="sortPrice">
+
+            <option value="">
+                Sort By Price
+            </option>
+
+            <option value="low-high">
+                Low To High
+            </option>
+
+            <option value="high-low">
+                High To Low
+            </option>
+
+        </select>
+
+    </section>
+
+    <!-- Products -->
+
+    <section class="products-section">
+
+        <h2>Featured Products</h2>
+
+        <div id="productsContainer" class="products-grid">
+
+            <!-- Products JS Se Aayenge -->
+
+        </div>
+
+    </section>
+
+    <!-- Newsletter -->
+
+    <section class="newsletter">
+
+        <h2>Subscribe For Updates</h2>
+
+        <p>
+            Get latest offers and discounts directly in your inbox.
+        </p>
+
+        <div class="newsletter-box">
+
+            <input
+                type="email"
+                placeholder="Enter your email"
+            >
+
+            <button>
+                Subscribe
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div>
+
+                <h3>ShopEase</h3>
+
+                <p>
+                    Your One Stop Shopping Destination.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>Email: support@shopease.com</p>
+                <p>Phone: +91 9876543210</p>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 ShopEase. All Rights Reserved.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
